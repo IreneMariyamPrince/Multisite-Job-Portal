@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules/*", "build/*", "public/assets","vite.config.js"],
+  "overrides": [
+    {
+      "files": ["src/**/*.js", "src/**/*.jsx"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier"
+      ],
+      "plugins": ["prettier"],
+      "rules": {
+        "prettier/prettier": "error",
+        "no-multiple-empty-lines": ["error", { "max": 1 }]
+      },
+      "parserOptions": {
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "node_modules/*",
+    "build/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.js",
+        "controllers/**/*.js",
+        "migrations/**/*.js",
+        "models/**/*.js",
+        "routers/**/*.js",
+        "seeders/**/*.js",
+        "config/**/*.js"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+      ],
+      "plugins": [
+        "prettier"
+      ],
+      "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "parser": "@babel/eslint-parser"
+      },
+      "env": {
+        "es6": true
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+    }
+  ]
+}

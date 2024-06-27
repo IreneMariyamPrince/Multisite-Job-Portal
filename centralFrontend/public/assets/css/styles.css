@@ -1,0 +1,9 @@
+input[type="file"]::file-selector-button {  
+    margin-right: 16px;
+    padding: 0 8px;
+}
+
+/* Paginate styling */
+.paginate p{
+    margin-bottom: 0;
+}
